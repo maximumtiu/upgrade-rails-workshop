@@ -1,12 +1,25 @@
 GIT
-  remote: https://github.com/rspec/rspec-core
+  remote: https://github.com/activerecord-hackery/ransack.git
+  revision: aada89548490f98dd3f1a65574ce20551c72d73c
+  specs:
+    polyamorous (2.1.1)
+      activerecord (>= 5.0)
+    ransack (2.1.1)
+      actionpack (>= 5.0)
+      activerecord (>= 5.0)
+      activesupport (>= 5.0)
+      i18n
+      polyamorous (= 2.1.1)
+
+GIT
+  remote: https://github.com/rspec/rspec-core.git
   revision: 77dbc84657c5dc45e07a7fe0f5b02b4caeb6c9ad
   specs:
     rspec-core (3.9.0.pre)
       rspec-support (= 3.9.0.pre)
 
 GIT
-  remote: https://github.com/rspec/rspec-expectations
+  remote: https://github.com/rspec/rspec-expectations.git
   revision: 75f5cc9cab09fd0728bcf95e26d2c4b46f73c466
   specs:
     rspec-expectations (3.9.0.pre)
@@ -14,7 +27,7 @@ GIT
       rspec-support (= 3.9.0.pre)
 
 GIT
-  remote: https://github.com/rspec/rspec-mocks
+  remote: https://github.com/rspec/rspec-mocks.git
   revision: 2aab10d3e7a9c1c500acd1e88a7a408670f8cc48
   specs:
     rspec-mocks (3.9.0.pre)
@@ -22,7 +35,7 @@ GIT
       rspec-support (= 3.9.0.pre)
 
 GIT
-  remote: https://github.com/rspec/rspec-rails
+  remote: https://github.com/rspec/rspec-rails.git
   revision: 9c6d8f3eaa8049f940691b9489e7a7862cd912b0
   branch: 4-0-dev
   specs:
@@ -36,7 +49,7 @@ GIT
       rspec-support (~> 3.8)
 
 GIT
-  remote: https://github.com/rspec/rspec-support
+  remote: https://github.com/rspec/rspec-support.git
   revision: c69a231d7369dd165ad7ce4742e1a2e21e3462b5
   specs:
     rspec-support (3.9.0.pre)
@@ -240,11 +253,6 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.20.3, < 2.0)
     rake (12.3.3)
-    ransack (2.1.1)
-      actionpack (>= 5.0)
-      activerecord (>= 5.0)
-      activesupport (>= 5.0)
-      i18n
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -305,11 +313,11 @@ GEM
       execjs (>= 0.3.0, < 3)
     warden (1.2.8)
       rack (>= 2.0.6)
-    web-console (3.7.0)
-      actionview (>= 5.0)
-      activemodel (>= 5.0)
+    web-console (4.0.0)
+      actionview (>= 6.0.0.a)
+      activemodel (>= 6.0.0.a)
       bindex (>= 0.4.0)
-      railties (>= 5.0)
+      railties (>= 6.0.0.a)
     webdrivers (4.1.2)
       nokogiri (~> 1.6)
       rubyzip (~> 1.0)
@@ -335,6 +343,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 6.0.0.rc2)
+  ransack!
   rspec-core!
   rspec-expectations!
   rspec-mocks!
