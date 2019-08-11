@@ -15,5 +15,7 @@ module GithubWorkshop
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    # removable once Rails 6 is merged
+    config.action_dispatch.return_only_media_type_on_content_type = false
   end
 end
